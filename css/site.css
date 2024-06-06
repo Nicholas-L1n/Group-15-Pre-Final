@@ -1,7 +1,7 @@
 body {
     margin: 0 0;
     padding-top: 10vh;
-    overflow-x: hidden;
+    overflow: hidden;
 
     max-width: 100%;
     background-color: black;
@@ -29,6 +29,7 @@ body {
     right: 0%;
     bottom: auto;
     
+    overflow: hidden;
 }
 
 .line {
@@ -40,10 +41,11 @@ body {
 
 #screen {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: black;
 
     overflow: hidden;
+
 }
 
 #upload-section {
@@ -51,7 +53,8 @@ body {
     width: 100%;
     height: 80vh;
 
-    margin-top: 10vh;
+    background-color: white;
+
 }
 
 #page-selector {
