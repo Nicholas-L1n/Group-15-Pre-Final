@@ -1,0 +1,74 @@
+body {
+    margin: 0 0;
+    padding-top: 10vh;
+    overflow-x: hidden;
+
+    max-width: 100%;
+    background-color: black;
+}
+
+#nav-bar {
+    /* styling */
+    /* background-color: white; */
+
+    /* dimensions */
+    width: 100%;
+    height: 10vh;
+
+
+    /* display */
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+    align-items: center;
+
+    /* position */
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: auto;
+    
+}
+
+.line {
+    width: 95%;
+    height: 4px;
+
+    background-color: black;
+}
+
+#screen {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+    overflow: hidden;
+}
+
+#upload-section {
+    /* dimensions */
+    width: 100%;
+    height: 80vh;
+
+    margin-top: 10vh;
+}
+
+#page-selector {
+    /* dimensions */
+    width: 100%;
+    height: 10vh;
+
+    /* display */
+    display: flex;
+    flex-flow: row;
+    justify-content:center;
+    align-items: center;
+
+    /* position */
+    position: fixed;
+    top: auto;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
