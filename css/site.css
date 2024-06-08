@@ -214,6 +214,8 @@ p {
 
     }
 
+
+    /* changes query orientation and size for mobile */
     #preview {
         max-width: 80% !important;
     }
@@ -221,4 +223,5 @@ p {
     #attributes {
         width: 80% !important;
     }
+    
   }
