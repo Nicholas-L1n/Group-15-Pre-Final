@@ -207,5 +207,18 @@ p {
         font-size: 4vw;
 
     }
+
+    #confirmContainer {
+        flex-flow: column !important;
+
+
+    }
+
+    #preview {
+        max-width: 80% !important;
+    }
     
+    #attributes {
+        width: 80% !important;
+    }
   }
