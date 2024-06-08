@@ -18,20 +18,22 @@ $('#imageUpload').on('change', function(event) {
             console.log('Image uploaded Successfully');
         };
         reader.readAsDataURL(file);
-        saveItem();
+        query();
     } else {
         alert('Please upload a valid image file.');
     }
 });
 
+$(".button").click(saveItem);
+
 // save to items STEP 2 
-function saveItem() {
-    $("#upload").toggleClass("oppacityChange");
+function query() {
+    $("#upload").toggleClass("opacityChange");
     delay(function() {$("#upload").toggleClass("hidden");}, 151);
     console.log("Upload opacity transition, hiding section")
 
     delay(function () {$("#confirm").toggleClass("hidden");}, 200);
-    delay(function() {$("#confirm").toggleClass("oppacityChange");}, 250);
+    delay(function() {$("#confirm").toggleClass("opacityChange");}, 250);
     console.log("Confirm opacity transition, un-hiding section")
 
 }
@@ -40,5 +42,13 @@ function saveItem() {
 
 // closet array STEP 3
 
+function saveItem() {
+    $("#confirm").toggleClass("opacityChange");
+    delay(function() {$("#confirm").toggleClass("hidden");}, 151);
+    console.log("Confirm opacity transition, hiding section")
+
+    delay(function () {$("#upload").toggleClass("hidden");}, 200);
+    delay(function() {$("#upload").toggleClass("opacityChange");}, 250);
+    console.log("Upload opacity transition, un-hiding section")
+}
 // function  confirmToArray (-)
-var items = []

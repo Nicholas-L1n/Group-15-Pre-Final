@@ -13,7 +13,7 @@ body {
     overflow: hidden;
 }
 
-.oppacityChange {
+.opacityChange {
     filter: opacity(0%);
 
     transition: filter 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -54,6 +54,10 @@ body {
 
 .logo {
     height: 60%;
+}
+
+.icon {
+    height: 3vw;
 }
 
 .navBarTutorial {
@@ -101,7 +105,12 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    
+
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
 }
 
 .container {

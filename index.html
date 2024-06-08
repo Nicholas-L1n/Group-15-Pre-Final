@@ -52,10 +52,68 @@
                 <p class="description">Upload an Image of your clothing to get started</p>
             </div>
 
-            <div id="confirm" class="section oppacityChange hidden">
+            <div id="confirm" class="section opacityChange hidden">
+                <div class="container row">
 
-                <img id="preview" src="" alt="Image Preview">
-                <button id="save" class="button">save</button>
+                    <!-- image preview -->
+                    <img id="preview" src="" alt="Image Preview">
+
+
+                    <!-- questionare -->
+                    <div id="attributes" class="column">
+
+                        <!-- temperature selection -->
+                        <div id="temperature" class="row query-div">
+
+                             <button id="hot" class="selector selected temperatureSelect">
+                                <img class="icon" src=".\img\Fire IconAsset 3@2x.png">
+                                hot
+                                
+                            </button>
+
+                             <button id="cold" class="selector temperatureSelect">
+                                <img class="icon" src=".\img\Cold IconAsset 4@2x.png">
+                                cold
+
+                            </button>
+
+                        </div>
+
+                        <!-- clothing type selection -->
+                        <div id="clothingType" class="row query-div">
+
+                            <button id="hot" class="selector selected typeSelect">
+                                hat
+                               
+                            </button>
+
+                            <button id="cold" class="selector typeSelect">
+                                shirt
+
+                            </button>
+                            
+                            <button id="cold" class="selector typeSelect">
+                               pants
+
+                            </button>
+
+
+                            <button id="cold" class="selector typeSelect">
+                               shoes
+
+                            </button>
+
+                       </div>
+
+
+
+                        <!-- save button  -->
+                        <button id="save" class="button">save to items</button>
+                        
+
+                    </div>
+
+                </div>
 
             </div>
             
@@ -67,13 +125,13 @@
 
         <div id="page-selector">
             <!-- ".selected" class pre applied to have upload be the first section when loading the site -->
-            <button class="selector selected">upload</button>
+            <button class="selector selected menu">upload</button>
 
-            <button class="selector">items</button>
+            <button class="selector menu">items</button>
 
-            <button class="selector">generator</button>
+            <button class="selector menu">generator</button>
 
-            <button class="selector">closet</button>
+            <button class="selector menu">closet</button>
         </div>
 
     </div>
