@@ -13,6 +13,18 @@ body {
     overflow: hidden;
 }
 
+.oppacityChange {
+    filter: opacity(0%);
+
+    transition: filter 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+
+}
+
+.hidden {
+    display: none !important;
+}
+
 
 /* NAV BAR */
 #nav-bar {
@@ -44,13 +56,23 @@ body {
     height: 60%;
 }
 
-.navBarSize {
+.navBarTutorial {
     background: none;
     border: none;
-    color: white;
+    color: #7f7e7e;
     font-size: 1vw;
     font-family: "Montserrat";
     cursor: pointer;
+
+    transition: color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+}
+
+.navBarTutorial:hover {
+
+    color: white;
+
+
 }
 
 
@@ -58,7 +80,7 @@ body {
 
 
 
-
+/* PAGES */
 
 #screen {
     width: 100%;
@@ -82,36 +104,36 @@ body {
     
 }
 
-
-
-/* UPLOAD FIELD */
-#imageUpload {
-    display: none;
+.container {
+    width: 100%;
+    height: auto;
 }
 
-label[for="imageUpload"] {
-    background-color: white;
-    color: black;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 10px;
+
+.row {
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.preview {
-    display: none;
-    margin-top: 20px;
+.column {
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items:center;
+
 }
 
-.preview {
-    width: 10vw;
-    display: none;
-}
 
-.uploadGraphic {
-    width: 15%; 
-}
 
+.description {
+    font-size: 2.5vw;
+    font-family: "Montserrat" ;
+}
 
 
 
@@ -137,41 +159,33 @@ label[for="imageUpload"] {
 }
 
 
-.selector {
-    background: none;
-    border: none;
-    color: #7f7e7e;
-    font-size: 1vw;
-    font-family: "Montserrat";
-    cursor: pointer;
-
-    text-align: center;
-    text-decoration: none;
-
-    /* font-size: 16px; */
-    cursor: pointer;
-
-    transition: color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
-
-}
-
-.selector:hover {
-    color: rgb(255, 255, 255);
-}
-
-
-.active {
-
-    text-decoration: underline;
-
-}
 
 p {
     color: white;
+    
 }
 
 
+
+
+
+
+
+
+
+/* TABLET ADJUSTMENTS*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    .selector {
+
+        font-size: 2.5vw;
+    }
+
+    .navBarTutorial {
+        font-size: 2.5vw;
+
+    }
+    
+  }
 
 /* PHONE ADJUSTMENTS*/
 @media (max-width: 600px) {
@@ -180,7 +194,7 @@ p {
         font-size: 4vw;
     }
 
-    .navBarSize {
+    .navBarTutorial {
         font-size: 4vw;
 
     }
