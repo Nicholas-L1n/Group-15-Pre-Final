@@ -1,0 +1,24 @@
+
+
+
+
+.thumbnail {
+    width: 5%;
+    margin: 1%;
+}
+
+#itemThumnailContainer {
+    overflow-x: scroll;
+    overflow-x: none;
+    margin: 0 5%;
+    padding: 5% 5%;
+    min-width: 80%;
+    width: auto;
+    right: 0% !important;
+
+
+}
+
+.justifyStart {
+    justify-content:flex-start !important;
+}

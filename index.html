@@ -12,22 +12,36 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+
+
     <link rel="stylesheet" type="text/css" href="./css/site.css">
 
     <link rel="stylesheet" type="text/css" href="./css/upload-section.css">
 
     <link rel="stylesheet" type="text/css" href="./css/selector.css">
 
+    <link rel="stylesheet" type="text/css" href="./css/items.css">
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script type="text/javascript" src="./js/main.js" defer=""></script>
 
     <script type="text/javascript" src="./js/upload.js" defer=""></script>
+
+    <script type="text/javascript" src="./js/page-changer.js" defer=""></script>
+
     
 </head>
 <body>
     <div id="screen">
 
+        <!-- NAV BAR -->
         <div id="nav-bar">
             
             <img class="logo" src=".\img\Picker LogoAsset 1@2x.png">
@@ -41,84 +55,147 @@
         <!-- main section that holds each page (upload, items, generator) -->
         <div class="section">
 
-            <div id="upload" class="section">
-                <div class="container row">
-                    <img class="uploadGraphic" src=".\img\upload-graphic.png">
-                    
-                    <label class="custom-file-upload">
-                        browse<input type="file" id="imageUpload" accept="image/*">
-                    </label>
-                    
+
+
+
+            <div id="uploadConfirmDiv" class="section present">
+                <!-- UPLOAD SECTION -->
+                <div id="upload" class="section">
+                    <div class="container row">
+                        <img class="uploadGraphic" src=".\img\upload-graphic.png">
+                        
+                        <label class="custom-file-upload">
+                            browse<input type="file" id="imageUpload" accept="image/*">
+                        </label>
+                        
+                    </div>
+                    <p class="description">Upload an Image of your clothing to get started</p>
                 </div>
-                <p class="description">Upload an Image of your clothing to get started</p>
-            </div>
-
-            <div id="confirm" class="section opacityChange hidden">
-                <div id="confirmContainer" class="container row">
-
-                    <!-- image preview -->
-                    <img id="preview" src="" alt="Image Preview">
 
 
-                    <!-- questionare -->
-                    <div id="attributes" class="column">
 
-                        <!-- temperature selection -->
-                        <div id="temperature" class="row query-div">
 
-                             <button id="hot" class="selector selected temperatureSelect">
-                                <img class="icon" src=".\img\Fire IconAsset 3@2x.png">
-                                hot
+
+
+
+                <!-- QUESTIONARE SECTION -->
+                <div id="confirm" class="section opacityChange hidden">
+                    <div id="confirmContainer" class="container row">
+
+                        <!-- image preview -->
+                        <img id="preview" src="" alt="Image Preview">
+
+
+                        <!-- questionare -->
+                        <div id="attributes" class="column">
+
+                            <!-- temperature selection -->
+                            <div id="temperature" class="row query-div">
+
+                                <button id="hot" class="selector temperatureSelect">
+                                    <img class="icon" src=".\img\Fire IconAsset 3@2x.png">
+                                    hot
+                                    
+                                </button>
+
+                                <button id="cold" class="selector temperatureSelect">
+                                    <img class="icon" src=".\img\Cold IconAsset 4@2x.png">
+                                    cold
+
+                                </button>
+
+                            </div>
+
+                            <!-- clothing type selection -->
+                            <div id="clothingType" class="row query-div">
+
+                                <button id="hat" class="selector typeSelect">
+                                    hat
                                 
-                            </button>
+                                </button>
 
-                             <button id="cold" class="selector temperatureSelect">
-                                <img class="icon" src=".\img\Cold IconAsset 4@2x.png">
-                                cold
+                                <button id="shirt" class="selector typeSelect">
+                                    shirt
 
-                            </button>
+                                </button>
+                                
+                                <button id="pants" class="selector typeSelect">
+                                pants
+
+                                </button>
+
+
+                                <button id="shoes" class="selector typeSelect">
+                                shoes
+
+                                </button>
 
                         </div>
 
-                        <!-- clothing type selection -->
-                        <div id="clothingType" class="row query-div">
 
-                            <button id="hot" class="selector selected typeSelect">
-                                hat
-                               
-                            </button>
 
-                            <button id="cold" class="selector typeSelect">
-                                shirt
-
-                            </button>
+                            <!-- save button  -->
+                            <button id="save" class="button">save to items</button>
                             
-                            <button id="cold" class="selector typeSelect">
-                               pants
 
-                            </button>
-
-
-                            <button id="cold" class="selector typeSelect">
-                               shoes
-
-                            </button>
-
-                       </div>
-
-
-
-                        <!-- save button  -->
-                        <button id="save" class="button">save to items</button>
-                        
-
+                        </div>
                     </div>
-
                 </div>
-
             </div>
             
-    
+
+
+
+
+
+
+
+
+
+
+            <!-- ITEMS -->
+            <div id="items" class="section opacityChange hidden">
+                <p id="itemsDescription" class="description ">Here is where you'll see the clothing items you save to the website.</p>
+                <p id="itemsCTA" class="description Small">Upload an Image in the "upload" section to get started.</p>
+
+                
+                <div id="itemThumnailContainer" class="row scrollbarCustom hidden">
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- GENERATOR -->
+            <div id="generator" class="section opacityChange hidden">
+                <p>GENERATOR</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- CLOSET -->
+            <div id="closet" class="section opacityChange hidden">
+                <p>CLOSET</p>
+            </div>
+
+
         </div>
 
 
@@ -132,7 +209,7 @@
 
             <button id="generator" class="selector menu">generator</button>
 
-            <button id="closet" class="selector menu">closet</button>
+            <!-- <button id="closet" class="selector menu">closet</button> -->
         </div>
 
     </div>
