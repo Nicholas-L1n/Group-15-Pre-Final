@@ -79,6 +79,7 @@ body {
 
 .icon {
     height: 3vw;
+    margin-right: .5vw;
 }
 
 .navBarTutorial {
@@ -166,8 +167,9 @@ body {
     font-family: "Montserrat" ;
 }
 /* to make desciption smaller */
-.Small {
+.small {
     font-size: 1vw !important;
+    font-family: "Montserrat" ;
 }
 
 
@@ -245,7 +247,7 @@ p {
         max-width: 80% !important;
     }
     
-    #attributes {
+    #attributesConfirm {
         width: 80% !important;
     }
     

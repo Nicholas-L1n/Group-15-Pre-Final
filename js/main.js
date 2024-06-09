@@ -28,23 +28,20 @@ function checkID(element, previousElement, previousPage) {
 
     $(".section").removeClass("present");
 
-    if (element.id === 'upload'){
+    if (element.id === 'uploadSelector'){
         console.log("run upload");
         uploadShow(previousPage);
 
-    } else if (element.id === 'items') {
+    } else if (element.id === 'itemsSelector') {
         console.log("run items");
         itemsShow(previousPage);
 
-    } else if (element.id === 'generator') {
+    } else if (element.id === 'generatorSelector') {
         console.log("run generator")
         generatorShow(previousPage);
 
-    } else if (element.id === 'closet') {
-        console.log("run closet")
-        closetShow(previousPage);
-
     }
+
 }
 
 $(".menu").click(function(){

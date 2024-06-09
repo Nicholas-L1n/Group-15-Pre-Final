@@ -36,6 +36,8 @@
 
     <script type="text/javascript" src="./js/page-changer.js" defer=""></script>
 
+    <script type="text/javascript" src="./js/generator.js" defer=""></script>
+
     
 </head>
 <body>
@@ -87,18 +89,18 @@
 
 
                         <!-- questionare -->
-                        <div id="attributes" class="column">
+                        <div id="attributesConfirm" class="column">
 
                             <!-- temperature selection -->
                             <div id="temperature" class="row query-div">
 
-                                <button id="hot" class="selector temperatureSelect">
+                                <button id="hot" class="selector row temperatureSelect">
                                     <img class="icon" src=".\img\Fire IconAsset 3@2x.png">
                                     hot
                                     
                                 </button>
 
-                                <button id="cold" class="selector temperatureSelect">
+                                <button id="cold" class="selector row temperatureSelect">
                                     <img class="icon" src=".\img\Cold IconAsset 4@2x.png">
                                     cold
 
@@ -155,11 +157,11 @@
 
             <!-- ITEMS -->
             <div id="items" class="section opacityChange hidden">
-                <p id="itemsDescription" class="description ">Here is where you'll see the clothing items you save to the website.</p>
-                <p id="itemsCTA" class="description Small">Upload an Image in the "upload" section to get started.</p>
+                <p class="description itemsDescription">Here is where you'll see the clothing items you save to the website.</p>
+                <p class="description small itemsCTA">Upload an Image in the "upload" section to get started.</p>
 
                 
-                <div id="itemThumnailContainer" class="row scrollbarCustom hidden">
+                <div id="itemThumnailContainer" class="row scrollbarCustom hidden justifyStart">
 
                 </div>
             </div>
@@ -177,23 +179,68 @@
 
             <!-- GENERATOR -->
             <div id="generator" class="section opacityChange hidden">
-                <p>GENERATOR</p>
+                <p class="description itemsDescription">Here is where you'll create outfits from the items you saved to the website.</p>
+                <p class="description Small itemsCTA">Upload an Image in the "upload" section to get started.</p>
+
+                <div id="generatorContainer" class="container column hidden">
+                    <div id="generatedPreview" class="row">
+
+                        <div id="generatorCarousel" class="boxStyle column">
+                            <p class="small">Hat</p>
+                        </div>
+    
+                        <div id="generatorCarousel" class="boxStyle column">
+                            <p class="small">Shirt</p>
+                        </div>
+    
+                        <div id="generatorCarousel" class="boxStyle column">
+                            <p class="small">Pants</p>
+                        </div>
+    
+                        <div id="generatorCarousel" class="boxStyle column">
+                            <p class="small">Shoes</p>
+                        </div>
+    
+                    </div>
+
+
+
+
+
+
+                    
+                    <!-- questionare -->
+                    <div id="attributesGenerator" class="column">
+
+                        <!-- temperature selection -->
+                        <div id="temperature" class="row query-div noBorder">
+
+                            <button id="hot" class="selector row temperatureSelect">
+                                <img class="icon" src=".\img\Fire IconAsset 3@2x.png">
+                                hot
+                                
+                            </button>
+
+                            <button id="cold" class="selector row temperatureSelect">
+                                <img class="icon" src=".\img\Cold IconAsset 4@2x.png">
+                                cold
+
+                            </button>
+
+                        </div>
+
+                        <!-- generate button  -->
+                        <button id="generateOutfit" class="button">generate outfit</button>
+
+                    </div>
+                </div>
+
+
             </div>
 
 
 
 
-
-
-
-
-
-
-
-            <!-- CLOSET -->
-            <div id="closet" class="section opacityChange hidden">
-                <p>CLOSET</p>
-            </div>
 
 
         </div>
@@ -203,11 +250,11 @@
 
         <div id="page-selector">
             <!-- ".selected" class pre applied to have upload be the first section when loading the site -->
-            <button id="upload" class="selector selected menu">upload</button>
+            <button id="uploadSelector" class="selector selected menu">upload</button>
 
-            <button id="items" class="selector menu">items</button>
+            <button id="itemsSelector" class="selector menu">items</button>
 
-            <button id="generator" class="selector menu">generator</button>
+            <button id="generatorSelector" class="selector menu">generator</button>
 
             <!-- <button id="closet" class="selector menu">closet</button> -->
         </div>

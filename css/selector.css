@@ -72,9 +72,18 @@
 
 
 /* questionare */
-#attributes {
+#attributesGenerator {
+    width: 30%;
+    padding: 0 5%;
+}
+
+#attributesConfirm {
     width: 40%;
     padding: 0 5%;
+}
+
+.noBorder {
+    border: none !important;
 }
 
 .query-div {
@@ -83,12 +92,17 @@
     padding: 5% 0;
     
 
-    border-bottom: 1px solid white;
 
     
     justify-content:center !important; 
     align-items: center !important;
 }
+
+
+#temperature.query-div {
+    border-bottom: 1px solid white;
+}
+
 
 
 

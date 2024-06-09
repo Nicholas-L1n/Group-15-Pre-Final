@@ -45,7 +45,7 @@ var uploadedImage="";
 
 
 // saves item to items
-$(".button").click(saveItem);
+$("#save").click(saveItem);
 
 
 
@@ -148,6 +148,12 @@ function saveItem() {
     console.log("Upload opacity transition, un-hiding section")
 
 
+    // resets questionare
+    $(".temperatureSelect").removeClass("selected");
+    $(".typeSelect").removeClass("selected");
+
+
+
 
 
 
@@ -157,11 +163,11 @@ function saveItem() {
 
 // adds item thumbnail to the items section
 function addImageItemsPage (imgLink) {
-    $("#itemsDescription").addClass("hidden");
-    $("#itemsCTA").addClass("hidden");
+    $(".itemsDescription").addClass("hidden");
+    $(".itemsCTA").addClass("hidden");
 
     $("#itemThumnailContainer").removeClass("hidden");
-    $("#itemThumnailContainer").addClass("justifyStart");
+    $("#generatorContainer").removeClass("hidden");
 
 
     var img = $('<img>', {
