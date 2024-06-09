@@ -23,7 +23,7 @@ function checkID(element) {
 
     if (element.id === 'upload'){
         console.log("run upload")
-
+        
     } else if (element.id === 'items') {
         console.log("run items")
 
@@ -32,7 +32,7 @@ function checkID(element) {
 
     } else if (element.id === 'closet') {
         console.log("run closet")
-        
+
     }
 }
 

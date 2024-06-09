@@ -18,7 +18,9 @@ $('#imageUpload').on('change', function(event) {
             console.log('Image uploaded Successfully');
         };
         reader.readAsDataURL(file);
-        query();
+
+        // sends you to questionare
+        questionare();
     } else {
         alert('Please upload a valid image file.');
     }
@@ -27,13 +29,13 @@ $('#imageUpload').on('change', function(event) {
 $(".button").click(saveItem);
 
 // save to items STEP 2 
-function query() {
+function questionare() {
     $("#upload").toggleClass("opacityChange");
-    delay(function() {$("#upload").toggleClass("hidden");}, 151);
+    delay(function () {$("#upload").toggleClass("hidden");}, 151);
     console.log("Upload opacity transition, hiding section")
 
     delay(function () {$("#confirm").toggleClass("hidden");}, 200);
-    delay(function() {$("#confirm").toggleClass("opacityChange");}, 250);
+    delay(function () {$("#confirm").toggleClass("opacityChange");}, 250);
     console.log("Confirm opacity transition, un-hiding section")
 
 }
@@ -44,11 +46,11 @@ function query() {
 
 function saveItem() {
     $("#confirm").toggleClass("opacityChange");
-    delay(function() {$("#confirm").toggleClass("hidden");}, 151);
+    delay(function () {$("#confirm").toggleClass("hidden");}, 151);
     console.log("Confirm opacity transition, hiding section")
 
     delay(function () {$("#upload").toggleClass("hidden");}, 200);
-    delay(function() {$("#upload").toggleClass("opacityChange");}, 250);
+    delay(function () {$("#upload").toggleClass("opacityChange");}, 250);
     console.log("Upload opacity transition, un-hiding section")
 }
 // function  confirmToArray (-)
