@@ -8,7 +8,7 @@
 
 #itemThumnailContainer {
     overflow-x: scroll;
-    overflow-x: none;
+    overflow-y: none;
     margin: 0 5%;
     padding: 5% 5%;
     min-width: 80%;
@@ -39,4 +39,8 @@
     overflow: hidden;
 
 
+}
+
+.generatorPreview {
+    width: 10vw;
 }
